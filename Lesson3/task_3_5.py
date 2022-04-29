@@ -8,15 +8,19 @@
 # adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
 from random import choice
 
-
+# Создаем функцию с треьуемыми аргументвми
 def get_jokes(n,nouns, adverbs, adjectives):
+    # пустой список
     d = []
+    # цикл для прохождения неоходимого количества раз
     for i in range(n):
         bonus = choice(nouns)
         bonus1 = choice(adverbs)
         bonus2 = choice(adjectives)
     # print(bonus, bonus1, bonus2)
+    #     складываем строку
         f = f'{bonus} {bonus1} {bonus2}'
+        # добавляем в список
         d.append(f)
     i+=1
     # print(d)
